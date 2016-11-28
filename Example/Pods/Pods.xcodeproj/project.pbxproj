@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E004F365FD3BBBB179FAD82528349DC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12E675FEBD184B196BB0AB7FFB4DF38E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D9D3463BF2EBBF764BBCE412547CA6 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27BD46E36772E3F729C10D0A98B5DE4A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		29DC747F1CF60BD9CDC41ADC93CF39EC /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */; };
+		2E0FE801934CD5BB4392D008B56EAE25 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3295DBCFD0C6EC6FD00F78F50E3A945B /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CE2AE3FDD6881DBAB6D259E0174FB7 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */; };
+		3BEE793B4377C5D01B55B23DFB135257 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */; };
+		3CDB35363E4812739477BEA03A0AC8FD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */; };
+		425A9D0CABE918ECA870D06D42AC0AD1 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45EF2661E1651218BB2D8B9AA89A8A7E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */; };
+		489AEAD5E85A69E3FF1270453B5429C6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 986CB32629319F7F2256662716334944 /* MASConstraint.m */; };
+		5F40FAC99BD19990AB1ED1ABFBECB195 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */; };
+		6531AE81668D9D1B25B3D77A0C2A8751 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F22B8314A45552876A9D05ED03D37C /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1F844F1FD1BCCA505F737F3C77CDE0 /* Pods-JMParallaxView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AF64B1D9E726D2D243552C2FC866314 /* Pods-JMParallaxView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8394F762470856D067442F9F85B1032A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		8D6C85D7DFBDFD4B40CA150006FDA777 /* JMParallaxView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D011F40A17401865E117F67862EE7C43 /* JMParallaxView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DDEEC6E17E96EB78E4A2EE51AC3D6E9 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9538D8B1722DCCC0569407686770C74E /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A0BBC26D3236C0786B71553110D5EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		9C827C825DE1016F8D7BC32E32CC3652 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5238D5F7C605FEE0CFF7927188AAFDA /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */; };
+		B6D9517C55EE96EFB80B112D498685D6 /* Pods-JMParallaxView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D49AD9B8FABF55796928E759194400 /* Pods-JMParallaxView_Example-dummy.m */; };
+		BA94723D6B24F3D2078945C3B85C8DC1 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */; };
+		BEA4A9F01029300D4C6DB312488B24DC /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1004AD229DF4C7B335CABB4E6F62BFA /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C72ED16055796A68780F46C16B4D0ED7 /* JMParallaxView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9C10016006B5053DB15978E73243E /* JMParallaxView-dummy.m */; };
+		D1207AC3F8F8900183CDEFF94CEB9B9F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */; };
+		D2811E4192D5A8AF733DB1A8E8FBD14D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */; };
+		DD52C2F9B1AF1414E8312A82CA48CAC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		E0C464441DECF740007F3102 /* JMParallaxView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C464421DECF740007F3102 /* JMParallaxView.h */; };
+		E0C464451DECF740007F3102 /* JMParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C464431DECF740007F3102 /* JMParallaxView.m */; };
+		E23A7DA0B247D825097FAFCD48E37C91 /* Pods-JMParallaxView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BDBEC95F8FB439404CC5C84A4A00F1 /* Pods-JMParallaxView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E266D0694A6EE78C105D4499E7B22F6F /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3AB1C83CC2396F735E01667FFC60044 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3EE59C139A1D4EAB02F2B53C3E47FB4 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */; };
+		E4B6F0B9D653D37599A0FB5D002BBF42 /* Pods-JMParallaxView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C4F2AB86BA8D60658805F820AE4E16 /* Pods-JMParallaxView_Tests-dummy.m */; };
+		EBC84647020CC5F0603B30E6B8ED041A /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED7F890662B4C32B041CACFF74FF65C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1B916E839F6957AF091386D2D6E2F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808FF626B0670AECE033421E17386BDA;
+			remoteInfo = JMParallaxView;
+		};
+		EC0DD9E3ECEA6D72DF19BE81B744F13D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45949964AA59B37BABC189417F5305BF;
+			remoteInfo = Masonry;
+		};
+		F893D99A7E19F5ABFF99559C6535A85F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45949964AA59B37BABC189417F5305BF;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033CA5CDF624376A976D06D2786C7879 /* JMParallaxView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMParallaxView.xcconfig; sourceTree = "<group>"; };
+		08C381C26FB2E733AEE7213D447F5ABB /* Pods_JMParallaxView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMParallaxView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		2AF9C10016006B5053DB15978E73243E /* JMParallaxView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMParallaxView-dummy.m"; sourceTree = "<group>"; };
+		2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3027ECF3675B7D92CFE998E7807ED8BD /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Masonry.modulemap; sourceTree = "<group>"; };
+		303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		309932D04314D6B463C1AE23DB973B0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CEAD00D7408298370B34EEB1F60E22 /* JMParallaxView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMParallaxView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		54BCC884ECCD4E9E9D9A02E68D8A7697 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56427ABE1B74B267D3E49A650AEAEEC8 /* JMParallaxView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMParallaxView-prefix.pch"; sourceTree = "<group>"; };
+		5A40D0960B78024E6021CD5BF3E08B91 /* Pods-JMParallaxView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMParallaxView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		5DF8B296C0CA9ED90BACF9626AEC84A6 /* Pods-JMParallaxView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMParallaxView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		654C6703FC66957F7B333AF90088B58A /* Pods_JMParallaxView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMParallaxView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9D0FDF6E51C58663DCBF5CAA9D3567 /* Pods-JMParallaxView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMParallaxView_Example-resources.sh"; sourceTree = "<group>"; };
+		6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		733E24BB1BD4F91A41D49820DFB9714B /* Pods-JMParallaxView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JMParallaxView_Tests.modulemap"; sourceTree = "<group>"; };
+		75C4F2AB86BA8D60658805F820AE4E16 /* Pods-JMParallaxView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMParallaxView_Tests-dummy.m"; sourceTree = "<group>"; };
+		77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		7AF64B1D9E726D2D243552C2FC866314 /* Pods-JMParallaxView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMParallaxView_Example-umbrella.h"; sourceTree = "<group>"; };
+		7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		7F44A621BE24B87AEF75DD7193846188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A1F09C4914696892063DBE5E8F190E /* JMParallaxView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JMParallaxView.modulemap; sourceTree = "<group>"; };
+		88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F1DD657F79C102EFC78847D4BC41D61 /* Pods-JMParallaxView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMParallaxView_Tests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		986CB32629319F7F2256662716334944 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		A7D6400AA72702775F6FA3942C5B051D /* Pods-JMParallaxView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMParallaxView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A939AE029F963B80E9278F14FB67375A /* Pods-JMParallaxView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JMParallaxView_Example.modulemap"; sourceTree = "<group>"; };
+		AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B46593E793B97D43AC0B07FA626F9ED4 /* Pods-JMParallaxView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMParallaxView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B5DCF904EF112BB9859711E46914BC81 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D49AD9B8FABF55796928E759194400 /* Pods-JMParallaxView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMParallaxView_Example-dummy.m"; sourceTree = "<group>"; };
+		BF76A058D9F0EF32C08EDDEE669A786D /* Pods-JMParallaxView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMParallaxView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		D011F40A17401865E117F67862EE7C43 /* JMParallaxView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMParallaxView-umbrella.h"; sourceTree = "<group>"; };
+		D6E73B1BF378996A05DE7CB40622D458 /* Pods-JMParallaxView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMParallaxView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E02F192B0BD63E0851DB8F116A884004 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C464421DECF740007F3102 /* JMParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMParallaxView.h; sourceTree = "<group>"; };
+		E0C464431DECF740007F3102 /* JMParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMParallaxView.m; sourceTree = "<group>"; };
+		E649D2378957E80DC6262AF67F6318EA /* Pods-JMParallaxView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMParallaxView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E77F47FDEB4408CE3E9D23075111DF2C /* Pods-JMParallaxView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMParallaxView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		ED6D6E8BEF05A02FD811693B453F1D1B /* Pods-JMParallaxView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMParallaxView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1BDBEC95F8FB439404CC5C84A4A00F1 /* Pods-JMParallaxView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMParallaxView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		FF8AB60BC66FA142AE40E6B421D065C8 /* Pods-JMParallaxView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMParallaxView_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		080A90F876F50709CD89E69B4E90C502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0BBC26D3236C0786B71553110D5EDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532DC9C37234F8845E71D2BA39B3B313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52C2F9B1AF1414E8312A82CA48CAC9 /* Foundation.framework in Frameworks */,
+				D2811E4192D5A8AF733DB1A8E8FBD14D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54416A683CF8A7914133BD1BD39629A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8394F762470856D067442F9F85B1032A /* Foundation.framework in Frameworks */,
+				34CE2AE3FDD6881DBAB6D259E0174FB7 /* Masonry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87B8EB0202DEAF3114B4D05644A5AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7F890662B4C32B041CACFF74FF65C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F51C70097EAC999FB02E34B3797D99C /* JMParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				723F667884FCD0EFD33DA0B90EACB8A1 /* JMParallaxView */,
+				D7CC2090D8E3E64129B6195F9EC3BF81 /* Support Files */,
+			);
+			name = JMParallaxView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3531737A8DAC41088F481AE1CEA35D66 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBCF8F58614834F5AF07AD8B149238 /* Pods-JMParallaxView_Example */,
+				7569ADD52197437E5A8F52C2ACCA54AC /* Pods-JMParallaxView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		59511511C2B4BC905C933DCC67E365C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */,
+				B4F0BA4A38BC9D168D667B378E89C6D9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE89B4BF95266E1F653A50E4E0CC1EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E0C464421DECF740007F3102 /* JMParallaxView.h */,
+				E0C464431DECF740007F3102 /* JMParallaxView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		723F667884FCD0EFD33DA0B90EACB8A1 /* JMParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				6DE89B4BF95266E1F653A50E4E0CC1EB /* Classes */,
+			);
+			path = JMParallaxView;
+			sourceTree = "<group>";
+		};
+		7569ADD52197437E5A8F52C2ACCA54AC /* Pods-JMParallaxView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E02F192B0BD63E0851DB8F116A884004 /* Info.plist */,
+				733E24BB1BD4F91A41D49820DFB9714B /* Pods-JMParallaxView_Tests.modulemap */,
+				E77F47FDEB4408CE3E9D23075111DF2C /* Pods-JMParallaxView_Tests-acknowledgements.markdown */,
+				5A40D0960B78024E6021CD5BF3E08B91 /* Pods-JMParallaxView_Tests-acknowledgements.plist */,
+				75C4F2AB86BA8D60658805F820AE4E16 /* Pods-JMParallaxView_Tests-dummy.m */,
+				5DF8B296C0CA9ED90BACF9626AEC84A6 /* Pods-JMParallaxView_Tests-frameworks.sh */,
+				8F1DD657F79C102EFC78847D4BC41D61 /* Pods-JMParallaxView_Tests-resources.sh */,
+				F1BDBEC95F8FB439404CC5C84A4A00F1 /* Pods-JMParallaxView_Tests-umbrella.h */,
+				ED6D6E8BEF05A02FD811693B453F1D1B /* Pods-JMParallaxView_Tests.debug.xcconfig */,
+				A7D6400AA72702775F6FA3942C5B051D /* Pods-JMParallaxView_Tests.release.xcconfig */,
+			);
+			name = "Pods-JMParallaxView_Tests";
+			path = "Target Support Files/Pods-JMParallaxView_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D655E6BEC6D5D2BE9F4A4F9EC5626C61 /* Development Pods */,
+				59511511C2B4BC905C933DCC67E365C4 /* Frameworks */,
+				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
+				ED93DC8700E904C76DED1B1FD5E3CD06 /* Products */,
+				3531737A8DAC41088F481AE1CEA35D66 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */,
+				537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */,
+				ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */,
+				986CB32629319F7F2256662716334944 /* MASConstraint.m */,
+				77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */,
+				A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */,
+				FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */,
+				C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */,
+				611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */,
+				303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */,
+				AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */,
+				96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */,
+				0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */,
+				1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */,
+				6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */,
+				5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */,
+				B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */,
+				F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */,
+				2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */,
+				7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */,
+				61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */,
+				C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */,
+				3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */,
+				AB2D74BCA437C31F2B7B0E2905262257 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		AB2D74BCA437C31F2B7B0E2905262257 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F44A621BE24B87AEF75DD7193846188 /* Info.plist */,
+				3027ECF3675B7D92CFE998E7807ED8BD /* Masonry.modulemap */,
+				61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */,
+				FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */,
+				CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */,
+				13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		B4F0BA4A38BC9D168D667B378E89C6D9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */,
+				88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1DBCF8F58614834F5AF07AD8B149238 /* Pods-JMParallaxView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				309932D04314D6B463C1AE23DB973B0D /* Info.plist */,
+				A939AE029F963B80E9278F14FB67375A /* Pods-JMParallaxView_Example.modulemap */,
+				BF76A058D9F0EF32C08EDDEE669A786D /* Pods-JMParallaxView_Example-acknowledgements.markdown */,
+				D6E73B1BF378996A05DE7CB40622D458 /* Pods-JMParallaxView_Example-acknowledgements.plist */,
+				B7D49AD9B8FABF55796928E759194400 /* Pods-JMParallaxView_Example-dummy.m */,
+				FF8AB60BC66FA142AE40E6B421D065C8 /* Pods-JMParallaxView_Example-frameworks.sh */,
+				6B9D0FDF6E51C58663DCBF5CAA9D3567 /* Pods-JMParallaxView_Example-resources.sh */,
+				7AF64B1D9E726D2D243552C2FC866314 /* Pods-JMParallaxView_Example-umbrella.h */,
+				B46593E793B97D43AC0B07FA626F9ED4 /* Pods-JMParallaxView_Example.debug.xcconfig */,
+				E649D2378957E80DC6262AF67F6318EA /* Pods-JMParallaxView_Example.release.xcconfig */,
+			);
+			name = "Pods-JMParallaxView_Example";
+			path = "Target Support Files/Pods-JMParallaxView_Example";
+			sourceTree = "<group>";
+		};
+		D655E6BEC6D5D2BE9F4A4F9EC5626C61 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F51C70097EAC999FB02E34B3797D99C /* JMParallaxView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D7CC2090D8E3E64129B6195F9EC3BF81 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54BCC884ECCD4E9E9D9A02E68D8A7697 /* Info.plist */,
+				87A1F09C4914696892063DBE5E8F190E /* JMParallaxView.modulemap */,
+				033CA5CDF624376A976D06D2786C7879 /* JMParallaxView.xcconfig */,
+				2AF9C10016006B5053DB15978E73243E /* JMParallaxView-dummy.m */,
+				56427ABE1B74B267D3E49A650AEAEEC8 /* JMParallaxView-prefix.pch */,
+				D011F40A17401865E117F67862EE7C43 /* JMParallaxView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JMParallaxView";
+			sourceTree = "<group>";
+		};
+		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED93DC8700E904C76DED1B1FD5E3CD06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37CEAD00D7408298370B34EEB1F60E22 /* JMParallaxView.framework */,
+				B5DCF904EF112BB9859711E46914BC81 /* Masonry.framework */,
+				08C381C26FB2E733AEE7213D447F5ABB /* Pods_JMParallaxView_Example.framework */,
+				654C6703FC66957F7B333AF90088B58A /* Pods_JMParallaxView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A6F28FB1B28751D83A2562A92CC602A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E675FEBD184B196BB0AB7FFB4DF38E /* MASCompositeConstraint.h in Headers */,
+				BEA4A9F01029300D4C6DB312488B24DC /* MASConstraint+Private.h in Headers */,
+				2E0FE801934CD5BB4392D008B56EAE25 /* MASConstraint.h in Headers */,
+				23D9D3463BF2EBBF764BBCE412547CA6 /* MASConstraintMaker.h in Headers */,
+				0E004F365FD3BBBB179FAD82528349DC /* MASLayoutConstraint.h in Headers */,
+				E266D0694A6EE78C105D4499E7B22F6F /* Masonry-umbrella.h in Headers */,
+				9C827C825DE1016F8D7BC32E32CC3652 /* Masonry.h in Headers */,
+				68F22B8314A45552876A9D05ED03D37C /* MASUtilities.h in Headers */,
+				9538D8B1722DCCC0569407686770C74E /* MASViewAttribute.h in Headers */,
+				8DDEEC6E17E96EB78E4A2EE51AC3D6E9 /* MASViewConstraint.h in Headers */,
+				EBC84647020CC5F0603B30E6B8ED041A /* NSArray+MASAdditions.h in Headers */,
+				6531AE81668D9D1B25B3D77A0C2A8751 /* NSArray+MASShorthandAdditions.h in Headers */,
+				425A9D0CABE918ECA870D06D42AC0AD1 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				E3AB1C83CC2396F735E01667FFC60044 /* View+MASAdditions.h in Headers */,
+				C1004AD229DF4C7B335CABB4E6F62BFA /* View+MASShorthandAdditions.h in Headers */,
+				3295DBCFD0C6EC6FD00F78F50E3A945B /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D314411CED62AE112ED32AFCD87EB6BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C464441DECF740007F3102 /* JMParallaxView.h in Headers */,
+				8D6C85D7DFBDFD4B40CA150006FDA777 /* JMParallaxView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53564C16E59FDBA349FD25BF1B581BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1F844F1FD1BCCA505F737F3C77CDE0 /* Pods-JMParallaxView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE3BB8A3516FA1B399788B0753BB99D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23A7DA0B247D825097FAFCD48E37C91 /* Pods-JMParallaxView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45949964AA59B37BABC189417F5305BF /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553A875530C741B1C61940F6259948EA /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				61661B1E0207DDAE76650605DF6637CA /* Sources */,
+				532DC9C37234F8845E71D2BA39B3B313 /* Frameworks */,
+				A6F28FB1B28751D83A2562A92CC602A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = B5DCF904EF112BB9859711E46914BC81 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		808FF626B0670AECE033421E17386BDA /* JMParallaxView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 920F124EBE69DEB2C989ED0BDC92A0E9 /* Build configuration list for PBXNativeTarget "JMParallaxView" */;
+			buildPhases = (
+				0948A2D2468E623F015D41FFC1CBB390 /* Sources */,
+				54416A683CF8A7914133BD1BD39629A1 /* Frameworks */,
+				D314411CED62AE112ED32AFCD87EB6BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2B9BD19A7BB5E07434716DAC99349F /* PBXTargetDependency */,
+			);
+			name = JMParallaxView;
+			productName = JMParallaxView;
+			productReference = 37CEAD00D7408298370B34EEB1F60E22 /* JMParallaxView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A11C0B98A2248C94188A643C7415B0D8 /* Pods-JMParallaxView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2953A144048D2C1BEFC006A137C1A7E /* Build configuration list for PBXNativeTarget "Pods-JMParallaxView_Tests" */;
+			buildPhases = (
+				8EECB9E6624B983E31519ADC400ECE9D /* Sources */,
+				E87B8EB0202DEAF3114B4D05644A5AA4 /* Frameworks */,
+				DE3BB8A3516FA1B399788B0753BB99D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JMParallaxView_Tests";
+			productName = "Pods-JMParallaxView_Tests";
+			productReference = 654C6703FC66957F7B333AF90088B58A /* Pods_JMParallaxView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE1369DDC54EA03A0D07B60BA4C68122 /* Pods-JMParallaxView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297131F523D9E01CD94FA5B278046ACA /* Build configuration list for PBXNativeTarget "Pods-JMParallaxView_Example" */;
+			buildPhases = (
+				170343DF0AC291B23EB265E3FD6679D9 /* Sources */,
+				080A90F876F50709CD89E69B4E90C502 /* Frameworks */,
+				D53564C16E59FDBA349FD25BF1B581BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E29F2911D3D5BBBC33FB5523840782 /* PBXTargetDependency */,
+				5EDB9B322339702CD0007684CD9689CD /* PBXTargetDependency */,
+			);
+			name = "Pods-JMParallaxView_Example";
+			productName = "Pods-JMParallaxView_Example";
+			productReference = 08C381C26FB2E733AEE7213D447F5ABB /* Pods_JMParallaxView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ED93DC8700E904C76DED1B1FD5E3CD06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808FF626B0670AECE033421E17386BDA /* JMParallaxView */,
+				45949964AA59B37BABC189417F5305BF /* Masonry */,
+				BE1369DDC54EA03A0D07B60BA4C68122 /* Pods-JMParallaxView_Example */,
+				A11C0B98A2248C94188A643C7415B0D8 /* Pods-JMParallaxView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0948A2D2468E623F015D41FFC1CBB390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72ED16055796A68780F46C16B4D0ED7 /* JMParallaxView-dummy.m in Sources */,
+				E0C464451DECF740007F3102 /* JMParallaxView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170343DF0AC291B23EB265E3FD6679D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9517C55EE96EFB80B112D498685D6 /* Pods-JMParallaxView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61661B1E0207DDAE76650605DF6637CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EF2661E1651218BB2D8B9AA89A8A7E /* MASCompositeConstraint.m in Sources */,
+				489AEAD5E85A69E3FF1270453B5429C6 /* MASConstraint.m in Sources */,
+				E3EE59C139A1D4EAB02F2B53C3E47FB4 /* MASConstraintMaker.m in Sources */,
+				3CDB35363E4812739477BEA03A0AC8FD /* MASLayoutConstraint.m in Sources */,
+				BA94723D6B24F3D2078945C3B85C8DC1 /* Masonry-dummy.m in Sources */,
+				29DC747F1CF60BD9CDC41ADC93CF39EC /* MASViewAttribute.m in Sources */,
+				5F40FAC99BD19990AB1ED1ABFBECB195 /* MASViewConstraint.m in Sources */,
+				B5238D5F7C605FEE0CFF7927188AAFDA /* NSArray+MASAdditions.m in Sources */,
+				27BD46E36772E3F729C10D0A98B5DE4A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				3BEE793B4377C5D01B55B23DFB135257 /* View+MASAdditions.m in Sources */,
+				D1207AC3F8F8900183CDEFF94CEB9B9F /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EECB9E6624B983E31519ADC400ECE9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B6F0B9D653D37599A0FB5D002BBF42 /* Pods-JMParallaxView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E29F2911D3D5BBBC33FB5523840782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JMParallaxView;
+			target = 808FF626B0670AECE033421E17386BDA /* JMParallaxView */;
+			targetProxy = C1B916E839F6957AF091386D2D6E2F8E /* PBXContainerItemProxy */;
+		};
+		5EDB9B322339702CD0007684CD9689CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 45949964AA59B37BABC189417F5305BF /* Masonry */;
+			targetProxy = EC0DD9E3ECEA6D72DF19BE81B744F13D /* PBXContainerItemProxy */;
+		};
+		8F2B9BD19A7BB5E07434716DAC99349F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 45949964AA59B37BABC189417F5305BF /* Masonry */;
+			targetProxy = F893D99A7E19F5ABFF99559C6535A85F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DC794D9DB837F1369B43B9E50C0ED11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6D6E8BEF05A02FD811693B453F1D1B /* Pods-JMParallaxView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JMParallaxView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMParallaxView_Tests/Pods-JMParallaxView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JMParallaxView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A04252F0515D4A422C78EBFA9EC743E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46593E793B97D43AC0B07FA626F9ED4 /* Pods-JMParallaxView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JMParallaxView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMParallaxView_Example/Pods-JMParallaxView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JMParallaxView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		401786811F17900A889ECA50363B011E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E649D2378957E80DC6262AF67F6318EA /* Pods-JMParallaxView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JMParallaxView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMParallaxView_Example/Pods-JMParallaxView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JMParallaxView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B4A8610178289188042E36026659FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8967005EE59E05AC66F707C8FAADF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033CA5CDF624376A976D06D2786C7879 /* JMParallaxView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JMParallaxView/JMParallaxView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMParallaxView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMParallaxView/JMParallaxView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JMParallaxView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE8D8F0CBE32C523BCC71C6ABB8202D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033CA5CDF624376A976D06D2786C7879 /* JMParallaxView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JMParallaxView/JMParallaxView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMParallaxView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMParallaxView/JMParallaxView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JMParallaxView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E46B4E57C9E1EE9023F352B4FD59D5E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FBB31DF505B055C9A3CC54AB67E0F3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D6400AA72702775F6FA3942C5B051D /* Pods-JMParallaxView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JMParallaxView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMParallaxView_Tests/Pods-JMParallaxView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JMParallaxView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		297131F523D9E01CD94FA5B278046ACA /* Build configuration list for PBXNativeTarget "Pods-JMParallaxView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A04252F0515D4A422C78EBFA9EC743E /* Debug */,
+				401786811F17900A889ECA50363B011E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553A875530C741B1C61940F6259948EA /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4A8610178289188042E36026659FB9 /* Debug */,
+				E46B4E57C9E1EE9023F352B4FD59D5E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		920F124EBE69DEB2C989ED0BDC92A0E9 /* Build configuration list for PBXNativeTarget "JMParallaxView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE8D8F0CBE32C523BCC71C6ABB8202D /* Debug */,
+				8967005EE59E05AC66F707C8FAADF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2953A144048D2C1BEFC006A137C1A7E /* Build configuration list for PBXNativeTarget "Pods-JMParallaxView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC794D9DB837F1369B43B9E50C0ED11 /* Debug */,
+				FBB31DF505B055C9A3CC54AB67E0F3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

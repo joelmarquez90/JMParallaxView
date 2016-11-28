@@ -1,0 +1,6 @@
+framework module Pods_JMParallaxView_Example {
+  umbrella header "Pods-JMParallaxView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

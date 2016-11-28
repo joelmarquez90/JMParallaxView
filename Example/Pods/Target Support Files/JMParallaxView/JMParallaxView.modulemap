@@ -1,0 +1,6 @@
+framework module JMParallaxView {
+  umbrella header "JMParallaxView-umbrella.h"
+
+  export *
+  module * { export * }
+}

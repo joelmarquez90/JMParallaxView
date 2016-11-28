@@ -1,0 +1,19 @@
+PODS:
+  - JMParallaxView (0.1.0):
+    - Masonry
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - JMParallaxView (from `../`)
+
+EXTERNAL SOURCES:
+  JMParallaxView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JMParallaxView: 9b0e2463ae162bb1a4b3542a9e4e5643cd8b419a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 3ebc5cbe4484ff4fe83d540fd72f7b9d96719991
+
+COCOAPODS: 1.1.1
