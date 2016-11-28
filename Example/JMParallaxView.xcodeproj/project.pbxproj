@@ -21,8 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A1A37FDEB3147661163C57A8 /* Pods_JMParallaxView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99706E9F4DEE323D7C8ED273 /* Pods_JMParallaxView_Example.framework */; };
+		E0C464481DECF982007F3102 /* JMHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C464471DECF982007F3102 /* JMHeaderViewController.m */; };
+		E0C4644B1DECF98F007F3102 /* JMStickyHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19F3A6435F7B603C439087BB /* JMParallaxView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JMParallaxView.podspec; path = ../JMParallaxView.podspec; sourceTree = "<group>"; };
+		19F3A6435F7B603C439087BB /* JMParallaxView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JMParallaxView.podspec; path = ../JMParallaxView.podspec; sourceTree = "<group>"; };
 		1BBF01DEC7D9B6B785A82A57 /* Pods-JMParallaxView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMParallaxView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMParallaxView_Tests/Pods-JMParallaxView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2DB474BFAB72BD17ECB14114 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2DB474BFAB72BD17ECB14114 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3D173425C2E9ADA40F6F2E7C /* Pods-JMParallaxView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMParallaxView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMParallaxView_Example/Pods-JMParallaxView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JMParallaxView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMParallaxView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,11 +61,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7EFB3F0901A8C127EEF316A5 /* Pods_JMParallaxView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMParallaxView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		883D278038A1388050214486 /* Pods-JMParallaxView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMParallaxView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMParallaxView_Tests/Pods-JMParallaxView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99706E9F4DEE323D7C8ED273 /* Pods_JMParallaxView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMParallaxView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BE311FE788877381067E95 /* Pods-JMParallaxView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMParallaxView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMParallaxView_Example/Pods-JMParallaxView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DB518E51F20BDBF84DC0B7DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DB518E51F20BDBF84DC0B7DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E0C464461DECF982007F3102 /* JMHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHeaderViewController.h; sourceTree = "<group>"; };
+		E0C464471DECF982007F3102 /* JMHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHeaderViewController.m; sourceTree = "<group>"; };
+		E0C464491DECF98F007F3102 /* JMStickyHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStickyHeaderViewController.h; sourceTree = "<group>"; };
+		E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStickyHeaderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,11 +147,14 @@
 			children = (
 				6003F59C195388D20070C39A /* JMAppDelegate.h */,
 				6003F59D195388D20070C39A /* JMAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JMViewController.h */,
 				6003F5A6195388D20070C39A /* JMViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				E0C464461DECF982007F3102 /* JMHeaderViewController.h */,
+				E0C464471DECF982007F3102 /* JMHeaderViewController.m */,
+				E0C464491DECF98F007F3102 /* JMStickyHeaderViewController.h */,
+				E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */,
 			);
 			name = "Example for JMParallaxView";
 			path = JMParallaxView;
@@ -244,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JM;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Joel Marquez";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -276,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -392,6 +398,8 @@
 			files = (
 				6003F59E195388D20070C39A /* JMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JMViewController.m in Sources */,
+				E0C4644B1DECF98F007F3102 /* JMStickyHeaderViewController.m in Sources */,
+				E0C464481DECF982007F3102 /* JMHeaderViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,14 +455,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -487,13 +500,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

@@ -8,7 +8,18 @@
 
 #import "JMViewController.h"
 
-@interface JMViewController ()
+#import "JMHeaderViewController.h"
+#import "JMStickyHeaderViewController.h"
+
+#import "Masonry.h"
+
+static NSString *const kJMTitle = @"JMTitle";
+static NSString *const kJMViewControllerClassName = @"JMViewControllerClassName";
+
+@interface JMViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *dataSource;
 
 @end
 
@@ -17,13 +28,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.tableView = [UITableView new];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:NSStringFromClass(UITableViewCell.class)];
+    
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    
+    self.dataSource = @[@{kJMTitle: @"Header", kJMViewControllerClassName:
+                              NSStringFromClass(JMHeaderViewController.class)},
+                        @{kJMTitle: @"Header + Sticky view", kJMViewControllerClassName:
+                              NSStringFromClass(JMStickyHeaderViewController.class)}];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(UITableViewCell.class)
+                                                            forIndexPath:indexPath];
+    
+    cell.textLabel.text = self.dataSource[indexPath.row][kJMTitle];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSString *className = self.dataSource[indexPath.row][kJMViewControllerClassName];
+    UIViewController *vc = [[NSClassFromString(className) alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
