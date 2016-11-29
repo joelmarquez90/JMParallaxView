@@ -72,6 +72,8 @@ static NSString *const kJMViewControllerClassName = @"JMViewControllerClassName"
     NSString *className = self.dataSource[indexPath.row][kJMViewControllerClassName];
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
     
+    vc.title = self.dataSource[indexPath.row][kJMTitle];
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
