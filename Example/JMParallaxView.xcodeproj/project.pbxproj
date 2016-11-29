@@ -24,6 +24,7 @@
 		A1A37FDEB3147661163C57A8 /* Pods_JMParallaxView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99706E9F4DEE323D7C8ED273 /* Pods_JMParallaxView_Example.framework */; };
 		E0C464481DECF982007F3102 /* JMHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C464471DECF982007F3102 /* JMHeaderViewController.m */; };
 		E0C4644B1DECF98F007F3102 /* JMStickyHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */; };
+		E0C4644E1DEDA766007F3102 /* JMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4644D1DEDA766007F3102 /* JMBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		E0C464471DECF982007F3102 /* JMHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHeaderViewController.m; sourceTree = "<group>"; };
 		E0C464491DECF98F007F3102 /* JMStickyHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStickyHeaderViewController.h; sourceTree = "<group>"; };
 		E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStickyHeaderViewController.m; sourceTree = "<group>"; };
+		E0C4644C1DEDA766007F3102 /* JMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseViewController.h; sourceTree = "<group>"; };
+		E0C4644D1DEDA766007F3102 /* JMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				E0C464471DECF982007F3102 /* JMHeaderViewController.m */,
 				E0C464491DECF98F007F3102 /* JMStickyHeaderViewController.h */,
 				E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */,
+				E0C4644C1DEDA766007F3102 /* JMBaseViewController.h */,
+				E0C4644D1DEDA766007F3102 /* JMBaseViewController.m */,
 			);
 			name = "Example for JMParallaxView";
 			path = JMParallaxView;
@@ -396,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C4644E1DEDA766007F3102 /* JMBaseViewController.m in Sources */,
 				6003F59E195388D20070C39A /* JMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JMViewController.m in Sources */,
 				E0C4644B1DECF98F007F3102 /* JMStickyHeaderViewController.m in Sources */,

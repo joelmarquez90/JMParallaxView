@@ -18,7 +18,21 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.parallaxHeader.image = [UIImage imageNamed:@"header2"];
+}
+
+- (void)setupParallaxView
+{
+    [super setupParallaxView];
+    
+    UILabel *stickyLabel = [[UILabel alloc] initWithFrame:
+                            CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 60)];
+    stickyLabel.text = @"I'm a sticky label!";
+    stickyLabel.backgroundColor = [UIColor orangeColor];
+    stickyLabel.textAlignment = NSTextAlignmentCenter;
+    
+    self.parallaxView.stickyView = stickyLabel;
+    self.parallaxView.headerTintColor = [UIColor orangeColor];
 }
 
 @end

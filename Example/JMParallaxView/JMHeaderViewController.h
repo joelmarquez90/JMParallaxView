@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMHeaderViewController : UIViewController
+#import "JMBaseViewController.h"
+
+@interface JMHeaderViewController : JMBaseViewController
 
 @end

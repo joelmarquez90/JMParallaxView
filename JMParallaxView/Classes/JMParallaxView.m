@@ -1,7 +1,9 @@
 //
 //  JMParallaxView.m
+//  JMParallaxView
 //
 //  Created by Joel Marquez on 11/25/16.
+//  Copyright © 2016 Joel Marquez. All rights reserved.
 //
 
 #import "JMParallaxView.h"

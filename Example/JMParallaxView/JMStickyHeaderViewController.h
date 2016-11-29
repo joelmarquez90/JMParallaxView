@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMStickyHeaderViewController : UIViewController
+#import "JMBaseViewController.h"
+
+@interface JMStickyHeaderViewController : JMBaseViewController
 
 @end
