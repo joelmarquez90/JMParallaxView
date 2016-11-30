@@ -17,6 +17,8 @@ pod "JMParallaxView"
 
 ## Usage
 
+### Simple header
+
 ##### 1. Create a tableView:
 
 ```objective-c
@@ -63,7 +65,25 @@ self.parallaxView.headerView = self.parallaxHeader;
 
 ##### 6. Enjoy
 
-![enjoy](http://memeshappen.com/media/created/Enjoy--meme-50385.jpg)
+![enjoy](http://i.giphy.com/l3vQZiDorvDVCbgHK.gif)
+
+### Header with sticky view
+
+Follow all the previous step, and in the final one, add this line:
+
+```objective-c
+UILabel *stickyLabel = [[UILabel alloc] initWithFrame:
+                        CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 60)];
+stickyLabel.text = @"I'm a sticky label!";
+stickyLabel.backgroundColor = [UIColor orangeColor];
+stickyLabel.textAlignment = NSTextAlignmentCenter;
+
+self.parallaxView.stickyView = stickyLabel;
+```
+
+##### Voilá!
+
+![enjoy](http://i.giphy.com/3oz8xu4R96MdTVRK00.gif)
 
 ## Author
 
