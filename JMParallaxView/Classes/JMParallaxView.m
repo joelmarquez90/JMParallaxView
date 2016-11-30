@@ -115,8 +115,8 @@
     [self.bottomStickyConstraint setOffset:self.stickyViewContainerOffset];
 
     [self.headerHeightConstraint setSizeOffset:
-     CGSizeMake(0, MAX(- newOffset - CGRectGetHeight(self.stickyView.frame),
-                       self.initialOffset - CGRectGetHeight(self.stickyView.frame)))];
+     CGSizeMake(0, MAX(- newOffset - CGRectGetHeight(self.stickyViewContainer.frame),
+                       self.initialOffset - CGRectGetHeight(self.stickyViewContainer.frame)))];
     
     [self layoutIfNeeded];
     
@@ -140,9 +140,9 @@
     
     if (anOffset < CGRectGetHeight(self.stickyViewContainer.frame)) {
         return JMParallaxStateOnTop;
-    } else if(anOffset < self.headerHeight * 0.5f) {
+    } else if(anOffset < (self.headerHeight + CGRectGetHeight(self.stickyViewContainer.frame)) * 0.5f) {
         return JMParallaxStateNearTop;
-    } else if (anOffset >= self.headerHeight) {
+    } else if (anOffset >= self.headerHeight + CGRectGetHeight(self.stickyViewContainer.frame)) {
         return JMParallaxStateOnBottom;
     } else {
         return JMParallaxStateNearBottom;
@@ -195,7 +195,7 @@
 
         case JMParallaxStateNearBottom: {
             // Move all the views to the bottom
-            targetOffset->y = -self.headerHeight;
+            targetOffset->y = - self.headerHeight - CGRectGetHeight(self.stickyViewContainer.frame);
         }
             break;
             
