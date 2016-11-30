@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A1A37FDEB3147661163C57A8 /* Pods_JMParallaxView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99706E9F4DEE323D7C8ED273 /* Pods_JMParallaxView_Example.framework */; };
+		E0865D141DEE88F400315A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0865D131DEE88F400315A9A /* LaunchScreen.storyboard */; };
 		E0C464481DECF982007F3102 /* JMHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C464471DECF982007F3102 /* JMHeaderViewController.m */; };
 		E0C4644B1DECF98F007F3102 /* JMStickyHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4644A1DECF98F007F3102 /* JMStickyHeaderViewController.m */; };
 		E0C4644E1DEDA766007F3102 /* JMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C4644D1DEDA766007F3102 /* JMBaseViewController.m */; };
@@ -66,6 +67,7 @@
 		99706E9F4DEE323D7C8ED273 /* Pods_JMParallaxView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMParallaxView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BE311FE788877381067E95 /* Pods-JMParallaxView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMParallaxView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMParallaxView_Example/Pods-JMParallaxView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB518E51F20BDBF84DC0B7DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E0865D131DEE88F400315A9A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C464461DECF982007F3102 /* JMHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHeaderViewController.h; sourceTree = "<group>"; };
 		E0C464471DECF982007F3102 /* JMHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHeaderViewController.m; sourceTree = "<group>"; };
 		E0C464491DECF98F007F3102 /* JMStickyHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStickyHeaderViewController.h; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0865D131DEE88F400315A9A /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* JMParallaxView-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0865D141DEE88F400315A9A /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
